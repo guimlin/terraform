@@ -1,0 +1,9 @@
+#cloud-config
+ user-data:
+  hostname: ubuntu-server
+    users:
+     - name: gavin
+       lock_passwd: true
+       ssh_authorized_keys:
+        - ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA3iOOa1hzYZXpoZ9vRG1fmqPV4zdvdRgilS4zaDos79+0xrbvzmLPxGyAIyitsULn9lbDHOMsRhO7vQ+W2UAk5FBX6OXe4a8IjPIliLpdnu9jyoS6FIcwc08RhsNlNqJtkyZUeZKzNWH5wVFhq52uQoB5Yyzt3k2c5rxde6VeCWH1WvnyUZLQmtYQfhgr1LMcoxL+zQbkgToeiptJpSLEhHIjqjfvfzSsG9e7lB4wUswXSN2yaWZTfu68DIaykeasEPgZr1lHDuFe14zOd3ogTsbpJtaJtpULDmwXll3Sxzgi1DJBTdpCthc2QMGoINxj4X3tdIa58XywR04g6u1LlQ==
+       sudo: ALL=(ALL) NOPASSWD:ALL
